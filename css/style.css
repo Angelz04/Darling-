@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --color-primary: #F5D38E;
+    --color-secundary : #FFFFFF;
+    --color-background: #093931;
+}
+
+body{
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Manrope', sans-serif;
+}
+
+/*Navbar*/
+
+header {
+    position: fixed; 
+    width: 100%;
+    background-color: var(--color-background);
+    padding: 10px 0;
+    z-index: 1000; 
+    margin: 0 132px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; 
+    margin-top: 10px;
+}
+
+.brand {
+    font-family: 'Cormorant Garamond', serif;
+    color: var(--color-primary);
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.menu{
+    margin-left: 1000px;
+}
+.menu ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin-right: 24px;
+}
+
+.menu a {
+    font-size: 14px;
+    text-decoration: none;
+    color: var(--color-secundary);
+}
+
+
+
+.menu a:hover {
+    color: var(--color-primary); 
+    font-weight: bold;
+}
+
+/*Landpage*/
+
+
+#land-page {
+    height: 100vh;
+    background-color: var(--color-background);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 48px; /* Alineación hacia la izquierda */
+}
+
+h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    font-size: 72px;
+    color: var(--color-primary);
+    white-space: pre-line; /* Conserva los espacios y las líneas */
+}
+
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 120px;
+
+}
+
+.mainBtn {
+    background: transparent;
+    border: 2px solid var(--color-secundary);
+    color: var(--color-secundary);
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 0.2em;
+    font-weight: 400;
+    padding: 16px 60px;
+    border-radius: 25px; /* bordes circulares */
+    margin-top: 40px;
+}
+
+.content-container:nth-child(2) {
+    position: relative;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+#Big-home-img {
+    width: 100%; /* Asegura que la imagen grande ocupe el 100% del ancho del contenedor */
+    z-index: 1;
+}
+
+#Small-home-img {
+    position: absolute;
+    top: 120px; 
+    left: 260px;/* Ajusta según sea necesario para la posición vertical */
+    z-index: 2;
+}
+
+#play-icon {
+    position: absolute;
+    top: 260px;
+    left: 380px;
+    z-index: 2;
+}
+
