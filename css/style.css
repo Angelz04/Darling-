@@ -22,7 +22,6 @@ header {
     background-color: var(--color-background);
     padding: 10px 0;
     z-index: 1000; 
-    margin: 0 132px;
 }
 
 nav {
@@ -38,6 +37,7 @@ nav {
     color: var(--color-primary);
     font-size: 30px;
     font-weight: 400;
+    margin: 0 132px;
 }
 
 .menu{
@@ -97,15 +97,16 @@ h1 {
 }
 
 .mainBtn {
+    display: inline-flex;
     background: transparent;
-    border: 2px solid var(--color-secundary);
+    border: 1px solid var(--color-secundary);
     color: var(--color-secundary);
     text-decoration: none;
     font-size: 18px;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.1em;
     font-weight: 400;
-    padding: 16px 60px;
-    border-radius: 25px; /* bordes circulares */
+    padding: 12px 59px;
+    border-radius: 25px; 
     margin-top: 40px;
 }
 
@@ -135,3 +136,105 @@ h1 {
     z-index: 2;
 }
 
+/*about us*/
+
+#services {
+    margin-top: 72px;
+    background-color: var(--color-secundary);
+    display: flex;
+    align-items: center;
+}
+
+.services-container {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: space-around; 
+    margin: auto 180px;
+    margin-bottom: 24px;
+}
+
+.delivery,
+.customer-care,
+.payment-security {
+    text-align: center; 
+    margin: auto 118px;
+}
+
+.services-container h3{
+    color: #171A1F;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; /* 155.556% */    
+    margin-top: 18px
+}
+
+.services-container p{
+    color: #9095A0;
+    text-align: center;
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */    
+    margin-bottom: 36px;
+}
+
+/*Featured Products*/
+
+#featured-products{
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.featured-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 132px;
+}
+
+
+.featuredBtn{
+    display: inline-flex;
+    background: transparent;
+    border: 1px solid var(--color-background);
+    color: var(--color-background);
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    padding: 12px 59px;
+    border-radius: 25px; 
+}
+
+.featured-container h2{
+    color: #0D554A;
+    font-family: Cormorant Garamond;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 56px; /* 140% */
+    white-space: pre-line;
+    margin-bottom: 12px;
+}
+
+.featured-container p{
+    color: #9095A0;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+    white-space: pre-line;
+    margin-bottom: 24px;
+}
+
+.gallery{
+    margin-left: 48px;
+}
