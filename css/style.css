@@ -29,7 +29,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     max-width: 1200px; 
-    margin-top: 10px;
+    margin: 0 132px 0 132px ;
 }
 
 .brand {
@@ -37,11 +37,10 @@ nav {
     color: var(--color-primary);
     font-size: 30px;
     font-weight: 400;
-    margin: 0 132px;
 }
 
 .menu{
-    margin-left: 1000px;
+    margin-left: 582px;
 }
 .menu ul {
     list-style: none;
@@ -76,7 +75,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding-left: 48px; /* Alineación hacia la izquierda */
 }
 
 h1 {
@@ -92,73 +90,87 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 0 120px;
+    margin-left: 132px;
 
 }
 
 .mainBtn {
     display: inline-flex;
-    background: transparent;
-    border: 1px solid var(--color-secundary);
-    color: var(--color-secundary);
-    text-decoration: none;
-    font-size: 18px;
-    letter-spacing: 0.1em;
-    font-weight: 400;
     padding: 12px 59px;
-    border-radius: 25px; 
-    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 26px;
+    border: 1px solid #FFF;
+    background: rgba(0, 0, 0, 0.00);
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;/* 155.556% */
+    margin-top: 24px; 
 }
 
 .content-container:nth-child(2) {
     position: relative;
     flex-direction: row;
-    align-items: flex-start;
     margin-top: 20px;
+    margin-left: 72px;
+    margin-right: 148px;
 }
 
 #Big-home-img {
-    width: 100%; /* Asegura que la imagen grande ocupe el 100% del ancho del contenedor */
+    width: 100%; 
     z-index: 1;
 }
 
 #Small-home-img {
     position: absolute;
-    top: 120px; 
-    left: 260px;/* Ajusta según sea necesario para la posición vertical */
+    top: 111px; 
+    left: 310px;
+    right: 148px;
     z-index: 2;
 }
 
 #play-icon {
     position: absolute;
-    top: 260px;
-    left: 380px;
+    top: 254px;
+    left: 430px;
     z-index: 2;
 }
 
 /*about us*/
 
 #services {
-    margin-top: 72px;
+    margin-top: 24px;
     background-color: var(--color-secundary);
     display: flex;
     align-items: center;
 }
 
 .services-container {
+    margin-top: 36px ;
     display: flex;
     flex-direction: row; 
     align-items: center;
-    justify-content: space-around; 
-    margin: auto 180px;
-    margin-bottom: 24px;
+    text-align: center;
 }
 
-.delivery,
-.customer-care,
-.payment-security {
-    text-align: center; 
-    margin: auto 118px;
+.delivery{
+    width: 276px;
+    margin-left: 180px;
+    margin-right: 127px;
+}
+
+.customer-care{
+    width: 276px;
+
+}
+
+.payment-security{
+    margin-left: 127px;
+    margin-right: 178px;
+    width: 276px;
 }
 
 .services-container h3{
@@ -168,8 +180,8 @@ h1 {
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
-    line-height: 28px; /* 155.556% */    
-    margin-top: 18px
+    line-height: 28px;  
+    margin-top: 18px;
 }
 
 .services-container p{
@@ -180,40 +192,44 @@ h1 {
     font-style: normal;
     font-weight: 400;
     line-height: 26px; /* 162.5% */    
-    margin-bottom: 36px;
 }
 
 /*Featured Products*/
 
 #featured-products{
-    margin-top: 24px;
+    margin-top: 60px;
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
 }
 
 .featured-container{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    margin-left: 132px;
+    margin-left: 129px;
+    margin-right: 48px;
 }
+
 
 
 .featuredBtn{
     display: inline-flex;
-    background: transparent;
-    border: 1px solid var(--color-background);
-    color: var(--color-background);
-    text-decoration: none;
-    font-size: 18px;
-    letter-spacing: 0.1em;
-    font-weight: 400;
     padding: 12px 59px;
-    border-radius: 25px; 
+    justify-content: center;
+    align-items: center;
+    border-radius: 26px;
+    border: 1px solid var(--color-background);
+    background: rgba(0, 0, 0, 0.00);
+    color: #0D554A;
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 155.556% */
+    margin-right: 54px ;
+
 }
 
 .featured-container h2{
+    margin-top: 54px;
     color: #0D554A;
     font-family: Cormorant Garamond;
     font-size: 40px;
@@ -236,5 +252,41 @@ h1 {
 }
 
 .gallery{
-    margin-left: 48px;
+    margin-top: 48px;
+}
+
+.galler img{
+    margin: 24px;
+}
+
+/*Our collections*/
+
+#our-collections{
+    margin-top: 48px;
+    display: flex;
+    align-items: center;
+}
+
+.collections-cotainer{
+    margin-left: 132px;
+    margin-right: 129px;
+}
+
+#our-collections h2{
+    margin-top: 48px;
+    margin-bottom: 46px;
+    color: #0D554A;
+    text-align: center;
+    font-family: Cormorant Garamond;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 56px; /* 140% */
+    text-decoration: none; 
+}
+
+
+
+.collections img{
+    margin: 40px 48px;
 }
