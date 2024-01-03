@@ -198,6 +198,7 @@ h1 {
 
 #featured-products{
     margin-top: 60px;
+    margin-bottom: 48px;
     display: flex;
 }
 
@@ -262,17 +263,16 @@ h1 {
 /*Our collections*/
 
 #our-collections{
-    margin-top: 48px;
     display: flex;
     align-items: center;
-}
-
-.collections-cotainer{
+    text-align: center;
     margin-left: 132px;
-    margin-right: 129px;
+    margin-right: 127px
 }
 
-#our-collections h2{
+
+
+.collections-cotainer h2{
     margin-top: 48px;
     margin-bottom: 46px;
     color: #0D554A;
@@ -285,8 +285,35 @@ h1 {
     text-decoration: none; 
 }
 
-
-
 .collections img{
-    margin: 40px 48px;
+    width: 338px;
+    height: 338px;
+    flex-shrink: 0;
+}
+
+#coll2{
+    margin-bottom: 40px;
+    margin-left: 48px;
+    margin-right: 51px;
+}
+
+#coll5{
+    margin-bottom: 40px;
+    margin-left: 48px;
+    margin-right: 53px;
+}
+
+.collectionBtn{
+    display: inline-flex;
+    padding: 12px 59px;
+    border-radius: 26px;
+    border: 1px solid #0D554A;
+    background: rgba(0, 0, 0, 0.00);
+    color: #0D554A;
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    margin-top: 36px; /* 155.556% */
 }
