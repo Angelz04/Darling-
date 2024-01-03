@@ -314,6 +314,73 @@ h1 {
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 28px;
-    margin-top: 36px; /* 155.556% */
+    line-height: 28px; /* 155.556% */
+    margin-top: 36px;
+    margin-bottom: 84px;
+}
+
+/*Our Selection of Jewerly */
+
+#jewerly-products{
+    margin-top: 24px;
+    margin-bottom: 48px;
+    display: flex;
+}
+
+.jewerly-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 129px;
+    margin-right: 48px;
+}
+
+
+
+.jewerlyBtn{
+    display: inline-flex;
+    padding: 12px 59px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 26px;
+    border: 1px solid var(--color-background);
+    background: rgba(0, 0, 0, 0.00);
+    color: #0D554A;
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 155.556% */
+    margin-right: 54px ;
+
+}
+
+.jewerly-container h2{
+    margin-top: 54px;
+    color: #0D554A;
+    font-family: Cormorant Garamond;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 56px; /* 140% */
+    white-space: pre-line;
+    margin-bottom: 12px;
+}
+
+.jewerly-container p{
+    color: #9095A0;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+    white-space: pre-line;
+    margin-bottom: 24px;
+}
+
+.gallery{
+    margin-top: 48px;
+}
+
+.galler img{
+    margin: 24px;
 }
