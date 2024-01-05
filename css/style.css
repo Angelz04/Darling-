@@ -12,6 +12,7 @@
 body{
     font-family: 'Cormorant Garamond', serif;
     font-family: 'Manrope', sans-serif;
+    overflow-x: hidden;
 }
 
 /*Navbar*/
@@ -217,7 +218,7 @@ h1 {
     justify-content: center;
     align-items: center;
     border-radius: 26px;
-    border: 1px solid var(--color-background);
+    border: 1px solid #0D554A;
     background: rgba(0, 0, 0, 0.00);
     color: #0D554A;
     font-family: Manrope;
@@ -383,4 +384,35 @@ h1 {
 
 .galler img{
     margin: 24px;
+}
+
+/*Our Story*/
+
+
+.story-container{
+    margin-left: 132px;
+    margin-right: 132px;
+    margin-top: 48px;
+}
+
+.story-container h2{
+    color: #0D554A;
+    text-align: center;
+    font-family: Cormorant Garamond;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 56px; /* 140% */
+    margin-bottom: 20px;
+}
+
+#story-img{
+    position: absolute;
+    z-index: 2;
+}
+
+#play-icon2{
+    position:absolute;
+    z-index: 2;
+    margin: 168.5px 572.5px;
 }
