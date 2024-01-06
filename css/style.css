@@ -567,27 +567,26 @@ h1 {
 
 /*Responsive*/
 @media only screen and (max-width: 768px) {
-    #jewerly-products {
-        flex-direction: column; 
-    }
-    .jewerly-container{
-        margin-left: 48px;
-        margin-right: 48px;
-    }
+#jewerly-products {
+    flex-direction: column; 
+}
+.jewerly-container{
+    margin-left: 48px;
+    margin-right: 48px;
+}
     
-    .jewerly-container h2{
-        text-align: center;
-    }
-    .jewerly-container p{
-        text-align: center;
-    }
-    .jw4{
-        display: none;
-    }
-    }
+.jewerly-container h2{
+    text-align: center;
+}
+.jewerly-container p{
+    text-align: center;
+}
+.jw4{
+    display: none;
+}
+}
 
 /*Our Story*/
-
 
 .story-container{
     margin-top: 48px;
