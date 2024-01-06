@@ -12,7 +12,6 @@
 body{
     font-family: 'Cormorant Garamond', serif;
     font-family: 'Manrope', sans-serif;
-    overflow-x: hidden;
 }
 
 /*Navbar*/
@@ -160,20 +159,14 @@ h1 {
 }
 
 .delivery{
-    width: 276px;
     margin-left: 180px;
     margin-right: 127px;
 }
 
-.customer-care{
-    width: 276px;
-
-}
 
 .payment-security{
     margin-left: 127px;
     margin-right: 178px;
-    width: 276px;
 }
 
 .services-container h3{
@@ -462,6 +455,7 @@ h1 {
     margin-right: 132px;
     margin-top: 72px;
     border-radius: 8px;
+    margin-bottom: 71px;
 }
 
 .texto{
@@ -518,7 +512,165 @@ h1 {
     margin-left: 608px;
 }
 
-.fot{
+/*Footer*/
+
+footer{
     background-color: #093931;
-    height: 300px;
+    height: 234px;
 }
+
+.footer-container{
+    display: flex;
+    align-items: flex-start;
+}
+
+.column1 {
+    margin-left: 132px;
+    margin-top: 48px;
+}
+
+
+
+.column1 h2{
+    color:#F5D38E;
+    font-family: Cormorant Garamond;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 46px; /* 153.333% */
+    margin-bottom: 93px;
+}
+
+.column1 p{
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; 
+    white-space: nowrap;/* 157.143% */
+}
+
+.column2 {
+    margin-left: 206px;
+    margin-top: 48px;
+}
+
+.column2 h4{
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 12px; /* 157.143% */
+}
+
+.column3 {
+    margin-top: 48px;
+    margin-left: 94px;
+    margin-right: 269px;
+}
+
+.column3 h4{
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 12px; /* 157.143% */
+}
+
+.column4{
+    margin-top: 44px;
+    margin-right: 132px;
+    flex-direction: row;
+}
+
+.column4 h3{
+    color: #FFF;
+    font-family: Cormorant Garamond;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 150% */
+}
+
+.column4 h5{
+    color: #FAFAFB;
+    font-family: Manrope;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 166.667% */
+    margin-bottom: 16px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center; 
+}
+
+.column4 input {
+    display: inline-flex;
+    padding: 10px 132px 9px 38px;
+    align-items: center;
+    gap: 6px;
+    border-radius: 18px 0px 0px 18px;
+    border: 1px solid #FFF;
+    background: rgba(0, 0, 0, 0.00);
+}
+
+.column4 input::placeholder{
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 157.143% */
+}
+
+.email-icon {
+    width: 16px;
+    height: 16px;
+    margin-left: 20px;
+    position: absolute;
+}
+
+
+.column4 button{
+    padding: 7px 23.5px 7px 24.5px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 18px 18px 0px;
+    background: #F2C66D;
+    position: absolute;
+    margin-left: 242px;
+    color: #6B4A09;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 157.143% */
+    outline: none;
+    border: none;
+    margin-left: 272px;
+}
+
+.logos {
+    display: flex;
+    margin-top: 36px;
+    margin-left: 240px;
+}
+
+.logos img{
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.logotw, .logofb , .logoin{
+    margin-right: 16px;
+}
+
