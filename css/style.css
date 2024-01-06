@@ -39,34 +39,103 @@ nav {
     margin-right: 582px;
 }
 
-.menu{
-    margin-right: 132px;
+.menu-toggle {
+    display: none;
+    cursor: pointer;
 }
 
-.menu ul {
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--color-primary);
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.nav-list {
     list-style: none;
     display: flex;
     margin: 0;
     padding: 0;
+    margin-right: 95px;
 }
 
-.menu li {
-    margin-right: 37px;
+.nav-list li {
+    margin-right: 37.26px;
 }
 
-.menu a {
+.nav-list a {
     font-size: 14px;
     text-decoration: none;
     color: var(--color-secundary);
 }
 
-
-
-.menu a:hover {
-    color: var(--color-primary); 
+.nav-list a:hover {
+    color: var(--color-primary);
     font-weight: bold;
     border-bottom: 3px solid var(--color-primary);
 }
+
+/*Responsive Navbar*/
+@media screen and (max-width: 768px) {
+
+.brand{
+    margin-left: 48px;
+}
+.menu-toggle {
+    display: block;
+    position: absolute;
+    top: 10px; 
+    right: 10px; 
+    z-index: 1001; 
+    margin-right: 48px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    margin: 0;
+    margin-top: 25px;
+    right: 0;
+    width: 100%;
+    background-color: var(--color-background);
+    z-index: 1000;
+    text-align: center; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    animation: slideIn 0.5s ease-in-out; 
+}
+
+.menu-toggle.open {
+    transform: rotate(90deg); /*animación acciónar*/
+}
+
+.menu-toggle.open + .nav-list {
+    display: flex;
+}
+
+.nav-list li {
+    margin-right: 0;
+    margin-bottom: 10px;
+}
+}
+
+/*slide animation*/
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 /*Landpage*/
 
@@ -77,6 +146,9 @@ nav {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    background-image: url(/assets/olas_\ blancas.png);
+    background-repeat: no-repeat;
+    background-size: 1440px 930px;
 }
 
 h1 {
@@ -141,6 +213,49 @@ h1 {
     z-index: 2;
 }
 
+@media screen and (max-width: 768px) {
+
+.content-container {
+    margin-top: 40px;
+    margin-left: 48px;
+    margin-right: 0;
+}
+
+h1 {
+    font-size: 42px;
+}
+
+.mainBtn{
+    padding: 8px 39px;
+    font-size: 16px;
+}
+
+.content-container:nth-child(2) {
+    margin-left: 18px;
+    margin-right: 48px;
+}
+
+#Big-home-img {
+    width: 200px; 
+}
+
+#Small-home-img {
+    width: 100px;
+    height: 130px;
+    margin-top: 76px; 
+    margin-left: 128px;
+    margin-right: 14px;
+}
+
+#play-icon {
+    width: 21px;
+    height: 21px;
+    margin-top: 124px;
+    margin-left: 168px;
+}
+
+}
+
 /*about us*/
 
 #services {
@@ -188,6 +303,29 @@ h1 {
     font-style: normal;
     font-weight: 400;
     line-height: 26px; /* 162.5% */    
+}
+
+@media only screen and (max-width: 768px) {
+    #services {
+        flex-direction: column; /* Cambia a una columna en pantallas más pequeñas */
+        align-items: flex-start; /* Alinea al inicio de la columna */
+    }
+
+    .services-container {
+        flex-direction: column; /* Cambia a una columna en pantallas más pequeñas */
+        align-items: flex-start; /* Alinea al inicio de la columna */
+        margin-top: 24px; /* Ajusta el margen superior */
+        margin-left: 48px;
+        margin-right: 48px;
+    }
+
+    .delivery,
+    .customer-care,
+    .payment-security {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 24px; /* Ajusta el margen inferior entre elementos */
+    }
 }
 
 /*Featured Products*/
