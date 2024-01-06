@@ -77,7 +77,7 @@ nav {
     border-bottom: 3px solid var(--color-primary);
 }
 
-/*Responsive Navbar*/
+/*Responsive*/
 @media screen and (max-width: 768px) {
 
 .brand{
@@ -213,8 +213,9 @@ h1 {
     z-index: 2;
 }
 
-@media screen and (max-width: 768px) {
+/*Responsive*/
 
+@media screen and (max-width: 768px) {
 .content-container {
     margin-top: 40px;
     margin-left: 48px;
@@ -305,27 +306,28 @@ h1 {
     line-height: 26px; /* 162.5% */    
 }
 
+/*Responsive*/
+
 @media only screen and (max-width: 768px) {
-    #services {
-        flex-direction: column; /* Cambia a una columna en pantallas más pequeñas */
-        align-items: flex-start; /* Alinea al inicio de la columna */
-    }
+#services {
+    flex-direction: column; 
+}
 
-    .services-container {
-        flex-direction: column; /* Cambia a una columna en pantallas más pequeñas */
-        align-items: flex-start; /* Alinea al inicio de la columna */
-        margin-top: 24px; /* Ajusta el margen superior */
-        margin-left: 48px;
-        margin-right: 48px;
-    }
+.services-container {
+    flex-direction: column; 
+    align-items: flex-start; 
+    margin-top: 24px; 
+    margin-left: 48px;
+    margin-right: 48px;
+}
 
-    .delivery,
-    .customer-care,
-    .payment-security {
-        margin-left: 0;
-        margin-right: 0;
-        margin-bottom: 24px; /* Ajusta el margen inferior entre elementos */
-    }
+.delivery,
+.customer-care,
+.payment-security {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 24px;
+}
 }
 
 /*Featured Products*/
@@ -390,6 +392,40 @@ h1 {
     margin-top: 48px;
 }
 
+/*Responsive*/
+@media only screen and (max-width: 768px) {
+#featured-products {
+    flex-direction: column; 
+}
+.featured-container{
+    margin-left: 48px;
+    margin-right: 48px;
+}
+
+.featured-container h2{
+    text-align: center;
+}
+.featured-container p{
+    text-align: center;
+}
+.featuredBtn {
+    padding: 15px 2px;
+    font-size: 16px;
+    margin-left: 48px;
+    margin-right: 48px;
+
+}
+.gallery {
+    margin-top: 20px;
+    margin-left: 48px;
+    margin-right: 48px;
+    text-align: center;
+    }
+
+.ft4{
+    display: none;
+}
+}
 
 
 /*Our collections*/
@@ -450,6 +486,18 @@ h1 {
     margin-top: 36px;
     margin-bottom: 84px;
 }
+
+@media (max-width: 768px) {
+#our-collections {
+    flex-direction: column;
+    margin-left: 48px;
+    margin-right: 48px;
+    }
+    .collections img {
+    margin-bottom: 24px
+    }
+}
+
 
 /*Our Selection of Jewerly */
 
@@ -516,6 +564,27 @@ h1 {
 .gallery img{
     margin: 5.1px;
 }
+
+/*Responsive*/
+@media only screen and (max-width: 768px) {
+    #jewerly-products {
+        flex-direction: column; 
+    }
+    .jewerly-container{
+        margin-left: 48px;
+        margin-right: 48px;
+    }
+    
+    .jewerly-container h2{
+        text-align: center;
+    }
+    .jewerly-container p{
+        text-align: center;
+    }
+    .jw4{
+        display: none;
+    }
+    }
 
 /*Our Story*/
 
