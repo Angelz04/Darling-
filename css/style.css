@@ -12,6 +12,7 @@
 body{
     font-family: 'Cormorant Garamond', serif;
     font-family: 'Manrope', sans-serif;
+    overflow-x: hidden;
 }
 
 /*Navbar*/
@@ -596,6 +597,8 @@ h1 {
 }
 .story-container{
     text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .story-container h2{
@@ -610,14 +613,15 @@ h1 {
 }
 
 #story-img{
-    position: absolute;
-    z-index: 2;
+    z-index: 1;
+    width: auto;
 }
 
 #play-icon2{
-    position: relative;
+    position:absolute;
     z-index: 2;
-    margin: 168.5px 572.5px;
+    margin-left: -612px;
+    margin-top: 162px;
 }
 
 /*Responsive Our Story*/
@@ -633,7 +637,6 @@ h1 {
 }
 
 #story-img {
-    z-index: 2;
     width: 388px;
     height: 160px;
 }
@@ -641,13 +644,23 @@ h1 {
 #play-icon2 {
     width: 28px;
     height: 28px;
-    z-index: 2;
     margin-top: 64px;
-    margin-left: 176px;
+    margin-left: -212px;
 }
 }
 
-
+@media only screen and (max-width: 432px){
+    #story-img {
+        width: 292px;
+        height: 160px;
+    }
+    #play-icon2 {
+        width: 24px;
+        height: 24px;
+        margin-top: 64px;
+        margin-left: -162px;
+    }
+}
 
 /*From the people*/
 
