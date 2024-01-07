@@ -77,7 +77,7 @@ nav {
     border-bottom: 3px solid var(--color-primary);
 }
 
-/*Responsive*/
+/*Responsive Navbar*/
 @media screen and (max-width: 768px) {
 
 .brand{
@@ -213,7 +213,7 @@ h1 {
     z-index: 2;
 }
 
-/*Responsive*/
+/*Responsive Lanpage*/
 
 @media screen and (max-width: 768px) {
 .content-container {
@@ -306,7 +306,7 @@ h1 {
     line-height: 26px; /* 162.5% */    
 }
 
-/*Responsive*/
+/*Responsive Services*/
 
 @media only screen and (max-width: 768px) {
 #services {
@@ -392,7 +392,7 @@ h1 {
     margin-top: 48px;
 }
 
-/*Responsive*/
+/*Responsive Featured Products*/
 @media only screen and (max-width: 768px) {
 #featured-products {
     flex-direction: column; 
@@ -487,6 +487,8 @@ h1 {
     margin-bottom: 84px;
 }
 
+/*Responsive Our Collection*/
+
 @media (max-width: 768px) {
 #our-collections {
     flex-direction: column;
@@ -503,8 +505,9 @@ h1 {
 
 #jewerly-products{
     margin-top: 24px;
-    margin-bottom: 48px;
     display: flex;
+    background: #FAFAFB;
+    border-bottom: 48px solid #FAFAFB;
 }
 
 .jewerly-container{
@@ -530,8 +533,6 @@ h1 {
     font-style: normal;
     font-weight: 400;
     line-height: 28px; /* 155.556% */
-    margin-right: 54px ;
-
 }
 
 .jewerly-container h2{
@@ -542,8 +543,8 @@ h1 {
     font-style: normal;
     font-weight: 600;
     line-height: 56px; /* 140% */
-    white-space: pre-line;
     margin-bottom: 12px;
+    white-space: pre-line;
 }
 
 .jewerly-container p{
@@ -565,7 +566,7 @@ h1 {
     margin: 5.1px;
 }
 
-/*Responsive*/
+/*Responsive Our Selection of Jewerly*/
 @media only screen and (max-width: 768px) {
 #jewerly-products {
     flex-direction: column; 
@@ -588,8 +589,12 @@ h1 {
 
 /*Our Story*/
 
+#our-story{
+    background: #FAFAFB;
+    border-top: 48px solid #FAFAFB;
+    border-bottom: 72px solid #FAFAFB;
+}
 .story-container{
-    margin-top: 48px;
     text-align: center;
 }
 
@@ -607,7 +612,6 @@ h1 {
 #story-img{
     position: absolute;
     z-index: 2;
-    
 }
 
 #play-icon2{
@@ -616,13 +620,41 @@ h1 {
     margin: 168.5px 572.5px;
 }
 
+/*Responsive Our Story*/
+@media only screen and (max-width: 768px) {
+
+.story-container {
+    margin-left: 48px;
+    margin-right: 48px;
+}
+
+.story-container h2 {
+    margin-bottom: 32px;
+}
+
+#story-img {
+    z-index: 2;
+    width: 388px;
+    height: 160px;
+}
+
+#play-icon2 {
+    width: 28px;
+    height: 28px;
+    z-index: 2;
+    margin-top: 64px;
+    margin-left: 176px;
+}
+}
+
+
+
 /*From the people*/
 
 
 #from-the-people{
     display: flex;
     background: #093931;
-    margin-top: 72px;
 }
 
 .people-container{
@@ -718,11 +750,63 @@ h1 {
     margin-left: 608px;
 }
 
+/*Responsive From The People */
+@media screen and (max-width: 768px) {
+#from-the-people {
+    flex-direction: column;
+}
+
+.people-container{
+    margin-left: 48px;
+    margin-right: 48px;
+    text-align: center;
+}
+
+.people-container h2 {
+    margin-top: 48px;
+    margin-bottom: 24px;
+}
+
+.people-container2 p{
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.people-container2{
+    margin-left: 48px;
+    margin-right: 48px;
+}
+
+.texto h4{
+    margin-bottom: 0px;
+}
+
+.ana-img {
+    width: 160px;
+    height: 480px;
+}
+
+.play1,
+.play2 {
+    width: 31px;
+    height: 31px;
+    margin-top: 460px;
+
+}
+
+.play1{
+margin-left: 270px;
+}
+
+.play2{
+    margin-left: 320px;
+}
+}
+
 /*Footer*/
 
 footer{
     background-color: #093931;
-    height: 234px;
 }
 
 .footer-container{
@@ -880,3 +964,45 @@ footer{
     margin-right: 16px;
 }
 
+/* Responsive footer*/
+
+@media (max-width: 768px) {
+.footer-container {
+    flex-direction: column;
+    text-align: center;
+    margin-left: 48px;
+    margin-right: 48px;
+}
+.column1 h2{
+    margin-bottom: 32px;
+    text-align: center;
+    font-size: 42px;
+}
+
+.column2,
+.column3 {
+    text-align: center;
+    display: flex;
+    margin: 0;
+    margin-top: 32px;
+    margin-left: 96px;
+}
+
+.column2 h4, .column3 h4{
+    margin-right: 20px;
+}
+
+.input-container{
+    margin-top: 32px;
+}
+
+.logos {
+    margin-left: 62px;
+    margin-top: 32px;
+    margin-bottom: 48px; 
+}
+
+.logotw, .logofb , .logoin{
+    margin-right: 48px;
+}
+}
