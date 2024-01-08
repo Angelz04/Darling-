@@ -1075,6 +1075,9 @@ margin-left: 24px;
     margin-right: 142px;
 }
 .column1 h2{
-    margin-right: 136px;
+    margin-right: 124px;
+}
+.column1{
+    margin-left: 124px;
 }
 }
