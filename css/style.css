@@ -217,6 +217,7 @@ h1 {
 /*Responsive Lanpage*/
 
 @media screen and (max-width: 768px) {
+
 .content-container {
     margin-top: 40px;
     margin-left: 48px;
@@ -255,7 +256,20 @@ h1 {
     margin-top: 124px;
     margin-left: 168px;
 }
+}
 
+@media screen and (max-width: 430px) {
+    
+    #Big-home-img{
+        width: 160px;
+    }
+    #Small-home-img {
+        display: none;
+    }
+    
+    #play-icon {
+        display: none;
+    }
 }
 
 /*about us*/
@@ -497,6 +511,8 @@ h1 {
     margin-right: 48px;
     }
     .collections img {
+    width: 286px;
+    height: 286px;
     margin-bottom: 24px
     }
 }
@@ -816,10 +832,24 @@ margin-left: 270px;
 }
 }
 
+@media (max-width: 430px) {
+.play1, .play2{
+    margin-top: 652px;
+}
+.play1{
+    margin-left: 250px;
+}
+        
+.play2{
+    margin-left: 300px;
+}
+}
+
 /*Footer*/
 
 footer{
     background-color: #093931;
+    text-align: center;
 }
 
 .footer-container{
@@ -965,6 +995,7 @@ footer{
     display: flex;
     margin-top: 36px;
     margin-left: 240px;
+    margin-bottom: 48px;
 }
 
 .logos img{
@@ -1017,5 +1048,23 @@ footer{
 
 .logotw, .logofb , .logoin{
     margin-right: 48px;
+}
+}
+@media (max-width: 430px) {
+.column4{
+margin-right: 0;
+}
+.column4 input {
+padding: 10px 52px 9px 28px;
+}
+.column4 button{
+padding: 7px 23.5px 7px 24.5px;
+margin-left: 232px;
+}
+.column4 h3{
+    margin-left: 36px;
+}
+.column4 h5{
+margin-left: 24px;
 }
 }
