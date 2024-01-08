@@ -37,7 +37,7 @@ nav {
     font-size: 30px;
     font-weight: 400;
     margin-left: 132px;
-    margin-right: 582px;
+    margin-right: 72px;
 }
 
 .menu-toggle {
@@ -79,7 +79,7 @@ nav {
 }
 
 /*Responsive Navbar*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 818px) {
 
 .brand{
     margin-left: 48px;
@@ -155,7 +155,7 @@ nav {
 h1 {
     font-family: 'Cormorant Garamond', serif;
     font-weight: 400;
-    font-size: 72px;
+    font-size: 4.5em;
     color: var(--color-primary);
     white-space: pre-line; /* Conserva los espacios y las líneas */
 }
@@ -216,7 +216,7 @@ h1 {
 
 /*Responsive Lanpage*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 818px) {
 
 .content-container {
     margin-top: 40px;
@@ -225,7 +225,7 @@ h1 {
 }
 
 h1 {
-    font-size: 42px;
+    font-size: 3em;
 }
 
 .mainBtn{
@@ -255,22 +255,7 @@ h1 {
     height: 21px;
     margin-top: 124px;
     margin-left: 168px;
-}
-}
-
-@media screen and (max-width: 430px) {
-    
-    #Big-home-img{
-        width: 160px;
-    }
-    #Small-home-img {
-        display: none;
-    }
-    
-    #play-icon {
-        display: none;
-    }
-}
+}}
 
 /*about us*/
 
@@ -833,15 +818,20 @@ margin-left: 270px;
 }
 
 @media (max-width: 430px) {
+
+.ana-img {
+    width: 130px;
+    height: 450px;
+}
 .play1, .play2{
-    margin-top: 652px;
+    margin-top: 554px;
 }
 .play1{
-    margin-left: 250px;
+    margin-left: 230px;
 }
         
 .play2{
-    margin-left: 300px;
+    margin-left: 270px;
 }
 }
 
@@ -1077,5 +1067,4 @@ footer{
     
     .logotw, .logofb, .logoin {
         margin-right: 16px;
-    }
-}
+    }}
