@@ -1067,4 +1067,14 @@ margin-left: 232px;
 .column4 h5{
 margin-left: 24px;
 }
+.column2,
+.column3 {
+    margin-left: 86px;
+}
+.column1 p{
+    margin-right: 142px;
+}
+.column1 h2{
+    margin-right: 136px;
+}
 }
