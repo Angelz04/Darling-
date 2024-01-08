@@ -1071,13 +1071,14 @@ margin-left: 24px;
 .column3 {
     margin-left: 86px;
 }
-.column1 p{
-    margin-right: 142px;
-}
-.column1 h2{
-    margin-right: 124px;
-}
 .column1{
-    margin-left: 124px;
+    margin: 0;
+}
+.column1 p{
+    margin-left: 94px;
+}
+
+.column1 h2{
+    margin-left: 110px;
 }
 }
