@@ -12,6 +12,7 @@
 body{
     font-family: 'Cormorant Garamond', serif;
     font-family: 'Manrope', sans-serif;
+    overflow-x: hidden;
 }
 
 /*Navbar*/
@@ -479,6 +480,13 @@ h1 {
     }
 }
 
+@media (max-width: 430px) {
+        .collections img {
+        width: 256px;
+        height: 256px;
+        }
+    }
+
 
 /*Our Selection of Jewerly */
 
@@ -577,12 +585,14 @@ h1 {
     text-align: center;
     align-items: center;
     justify-content: center;
+    margin-left: 132px;
+    margin-right: 132px;
 }
 
 .story-container h2{
     color: #0D554A;
     text-align: center;
-    font-family: 'Cormorant Garamond', serif;;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 40px;
     font-style: normal;
     font-weight: 600;
@@ -592,7 +602,7 @@ h1 {
 
 #story-img{
     z-index: 1;
-    width: auto;
+    width: 100%;
 }
 
 #play-icon2{
@@ -602,7 +612,12 @@ h1 {
     margin-top: 162px;
 }
 
-/*Responsive Our Story*/
+@media only screen and (max-width: 1400px) {
+    #play-icon2{
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 768px) {
 
 .story-container {
@@ -614,31 +629,10 @@ h1 {
     margin-bottom: 32px;
 }
 
-#story-img {
-    width: 388px;
-    height: 160px;
+
+
 }
 
-#play-icon2 {
-    width: 28px;
-    height: 28px;
-    margin-top: 64px;
-    margin-left: -212px;
-}
-}
-
-@media only screen and (max-width: 432px){
-    #story-img {
-        width: 292px;
-        height: 160px;
-    }
-    #play-icon2 {
-        width: 24px;
-        height: 24px;
-        margin-top: 64px;
-        margin-left: -162px;
-    }
-}
 
 /*From the people*/
 
@@ -741,8 +735,16 @@ h1 {
     margin-left: 608px;
 }
 
+@media screen and (max-width : 1439px) {
+    .play1{
+    display: none;
+    }
+    .play2{
+    display: none; 
+    }
+}
 /*Responsive From The People */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1168px) {
 #from-the-people {
     flex-direction: column;
 }
@@ -776,41 +778,52 @@ h1 {
     width: 160px;
     height: 480px;
 }
-
-.play1,
-.play2 {
-    width: 31px;
-    height: 31px;
-    margin-top: 460px;
-
-}
-
 .play1{
-margin-left: 270px;
+    display: none;
+    }
+    
+    .play2{
+    display: none; 
+    }
 }
 
-.play2{
-    margin-left: 320px;
+@media (max-width: 768px){
+    .play1{
+        width: 42px;
+        height: 42px;
+        display: block;
+        margin-left: 250px;
+        margin-top: 460px;
+    }
+    .play2{
+        width: 42px;
+        height: 42px;
+        display: block;
+        margin-left: 320px;
+        margin-top: 460px;
+    }
 }
-}
+
+
 
 @media (max-width: 430px) {
 
-.ana-img {
-    width: 130px;
-    height: 450px;
+.people-container2{
+    flex-direction: column;
 }
-.play1, .play2{
-    margin-top: 554px;
+.ana-img{
+    width: 100%;
+    height: auto;
 }
 .play1{
-    margin-left: 230px;
+display: none;
 }
-        
 .play2{
-    margin-left: 270px;
+display: none;
 }
 }
+
+
 
 /*Footer*/
 
