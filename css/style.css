@@ -12,7 +12,6 @@
 body{
     font-family: 'Cormorant Garamond', serif;
     font-family: 'Manrope', sans-serif;
-    overflow-x: hidden;
 }
 
 /*Navbar*/
@@ -149,7 +148,7 @@ nav {
     justify-content: flex-start;
     background-image: url(/assets/olas_\ blancas.png);
     background-repeat: no-repeat;
-    background-size: 1440px 930px;
+    background-size: 100% auto; /* Ajusta para que la imagen de fondo sea completamente responsiva */
 }
 
 h1 {
@@ -160,13 +159,12 @@ h1 {
     white-space: pre-line; /* Conserva los espacios y las líneas */
 }
 
-
 .content-container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 132px;
-
+    margin-left: 5%;
+    margin-right: 10%; /* Ajusta según sea necesario */
 }
 
 .mainBtn {
@@ -179,83 +177,62 @@ h1 {
     background: rgba(0, 0, 0, 0.00);
     color: #FFF;
     font-family: 'Manrope', sans-serif;
-    font-size: 18px;
+    font-size: 1em;
     font-style: normal;
     font-weight: 400;
     line-height: 28px;/* 155.556% */
     margin-top: 24px; 
 }
 
-.content-container:nth-child(2) {
-    position: relative;
-    flex-direction: row;
-    margin-top: 20px;
-    margin-left: 72px;
-    margin-right: 148px;
+.content-container2 {
+    margin-right: 15%;
 }
 
 #Big-home-img {
-    width: 100%; 
+    width: 100%;
     z-index: 1;
 }
 
 #Small-home-img {
+    width: 19%; 
+    height: auto;
     position: absolute;
-    margin-top: 111px; 
-    margin-left: 310px;
-    margin-right: 148px;
+    transform: translate(-50%, 35%);
     z-index: 2;
 }
 
 #play-icon {
+    width: 2%; 
     position: absolute;
-    margin-top: 254px;
-    margin-left: 430px;
-    z-index: 2;
+    transform: translate(-50%, 930%);
+    z-index: 3;
 }
 
-/*Responsive Lanpage*/
-
-@media screen and (max-width: 818px) {
-
-.content-container {
-    margin-top: 40px;
-    margin-left: 48px;
-    margin-right: 0;
+@media screen and (max-width: 736px) {
+    .mainBtn{
+    padding: 12px 39px;;
+    }  
+    h1{
+        font-size: 3.5em;
+    }
+}
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 3em;
+    }
+    .mainBtn{
+        padding: 12px 29px;;
+        }  
 }
 
-h1 {
-    font-size: 3em;
+@media screen and (max-width: 400px) {
+    h1 {
+        font-size: 2em; 
+    }
+    .mainBtn{
+        padding: 12px 19px;;
+        }  
 }
-
-.mainBtn{
-    padding: 8px 39px;
-    font-size: 16px;
-}
-
-.content-container:nth-child(2) {
-    margin-left: 18px;
-    margin-right: 48px;
-}
-
-#Big-home-img {
-    width: 200px; 
-}
-
-#Small-home-img {
-    width: 100px;
-    height: 130px;
-    margin-top: 76px; 
-    margin-left: 128px;
-    margin-right: 14px;
-}
-
-#play-icon {
-    width: 21px;
-    height: 21px;
-    margin-top: 124px;
-    margin-left: 168px;
-}}
 
 /*about us*/
 
