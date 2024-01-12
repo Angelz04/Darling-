@@ -1058,3 +1058,87 @@ footer{
     .logotw, .logofb, .logoin {
         margin-right: 16px;
     }}
+
+/*Our Products*/
+
+#our-products {
+    background-color: var(--color-background);
+    display: flex;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    background-image: url(/assets/olas_blancas2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.our-products-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.search-container {
+    display: flex;
+    padding: 2% 200.7% 2% 2.5%; 
+    align-items: center;
+    gap: 8px;
+    border-radius: 26px;
+    border: 1px solid #F8F9FA;
+    background: #FFF;
+    width: 14.5em;
+    box-sizing: border-box;
+}
+
+.search-icon {
+    width: 24px; 
+    height: 24px; 
+}
+
+.search-bar {
+    padding: 10px;
+    font-size: 1.125em;
+    border: none;
+    outline: none;
+}
+
+.our-products-container h1 {
+    color: #F5D38E;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3.875em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 82px;
+    margin: 1.5rem;
+}
+
+.search-container input::placeholder {
+    color: #323842;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.125em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+/*Responsive Search Bar*/
+@media screen and (max-width: 978px) {
+    .search-container {
+        padding: 2% 150% 2% 2.5%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .search-container {
+        padding: 2% 110% 2% 2.5%;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .search-container {
+        padding: 2% 90% 2% 2.5%;
+    }
+}
+
