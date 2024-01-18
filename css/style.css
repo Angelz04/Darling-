@@ -2009,3 +2009,435 @@ select{
 }
 }
 
+/*Payment Section*/
+
+#order-payment{
+    padding-top: 7rem;
+    margin-left: 8.25rem;
+    margin-right: 8.25rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-summary-container h2{
+    color: #171A1F;
+    font-family: Cormorant Garamond;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px; /* 150% */
+    margin-top: 1.5rem;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.order-summary-container{
+    border-radius: 4px;
+    background: #FFF;
+    box-shadow: 0px 0px 1px 0px rgba(23, 26, 31, 0.07), 0px 0px 2px 0px rgba(23, 26, 31, 0.12);
+    flex-shrink: 0;
+    width: 785px;
+    height: 498px;
+}
+.order-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 1.5rem;
+    text-align: center;
+}
+
+.order-container img{
+    padding-right: 3.18rem;
+}
+
+.product-info{
+    display: flex;
+    flex-direction: column;
+    text-align:start;
+    width: 248.13px;
+    padding: 47.665px 0px 47.665px 16px;
+    gap: 2px;
+}
+
+.order-container h3{
+    color: #171A1F;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px; /* 157.143% */
+}
+
+.order-container h4{
+    color: #565E6C;
+    font-family: Manrope;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 166.667% */
+}
+
+.order-container h5{
+    color: #171A1F;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px; /* 157.143% */
+    width: 228.88px;
+    padding: 0px 16.06px 0px 0px;
+
+}
+
+
+
+.deleate-icon{
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+
+.payment-method{
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    background: #FFF;
+    box-shadow: 0px 0px 1px 0px rgba(23, 26, 31, 0.07), 0px 0px 2px 0px rgba(23, 26, 31, 0.12);
+    width: 348px;
+    height: 583px;
+    flex-shrink: 0;
+}
+
+.payment-container{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.payment-method-container{
+    margin-bottom: 2rem;
+}
+
+.payment-method-container h2{
+    color: #171A1F;
+    font-family: Cormorant Garamond;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px; /* 150% */
+    margin-bottom: 8px;
+    margin-top: 1.5rem;
+}
+
+.payment-method-container h3{
+    color: #379AE6;
+    font-family: Manrope;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.667px; /* 13.889% */
+    margin-bottom: 12px;
+}
+
+.card-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid #0D554A;
+    background: #F8F9FA;
+    color: #0D554A;
+    font-family: Manrope;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 163.636% */
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+
+.card-info h4{
+    padding-right: 120px;
+}
+
+.card-info h5{
+    margin-right: 21px;
+}
+
+.card-info img{
+    width: 35px;
+    height: 36px;
+    padding-left: 6px;
+    padding-right: 6px;
+    flex-shrink: 0;
+}
+
+.voucher-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.voucher-container h2{
+    color: #171A1F;
+    font-family: Cormorant Garamond;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; /* 155.556% */
+    margin-bottom: 9px;
+}
+
+.voucher-input{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 8px;
+}
+
+.voucher-container h3{
+    color: #171A1F;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 157.143% */
+    width: 220px;
+    padding: 7px 159px 7px 7px;
+    border-radius: 4px;
+    border: 1px solid #9095A0;
+    background: #FFF;
+    margin-right: 7px;
+}
+.voucher-input button{
+    display: inline-flex;
+    padding: 7px 17.5px 7px 18.5px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background: #F2C66D;
+    color: #6B4A09;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 157.143% */
+    border: none;
+    padding-top: 8px;
+}
+.voucher-container h4{
+    color: #8F640C;
+    font-family: Manrope;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 166.667% */
+    border-radius: 14px;
+    display: flex;
+    width: 55px;
+    height: 28px;
+    padding: 4px 9px 4px 8px;
+    justify-content: center;
+    align-items: center;
+    background: #FEF9EE;
+    margin-bottom: 32px;
+}
+
+.summary-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.summary-container h2{
+    color: #171A1F;
+    font-family: Cormorant Garamond;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; /* 155.556% */
+    margin-bottom: 10px;
+}
+
+.summary-box {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 8px;
+    justify-content: space-between
+}
+
+.summary-box h3{
+    color: #171A1F;
+    font-family: Manrope;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 166.667% */
+}
+
+.summary-box h4{
+    color: #171A1F;
+    text-align: right;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px; /* 157.143% */
+}
+
+.total-container{
+    margin-top: 8px;
+}
+
+.total{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.total h3{
+    color: #171A1F;
+    font-family: Manrope;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 166.667% */
+}
+
+.total h2{
+    color: #E8502E;
+    text-align: right;
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; /* 155.556% */
+    padding-top: 8px;
+}
+
+.total-btn{
+    display: inline-flex;
+    padding: 9px 76px 9px 75px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 22px;
+    background: #0D554A;   
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+    border: none;     
+}
+
+@media screen and (max-width: 1300px){
+    #order-payment{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .order-summary-container{
+        margin-bottom: 5rem;
+    }
+}
+
+
+@media screen and (max-width: 736px){
+    #order-payment{
+        padding-top: 10rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .order-summary-container{
+        text-align: center;
+        width: 400px;
+        height: 600px;
+        margin-bottom: 5rem;
+    }
+}
+
+/*You may also like 2*/
+
+#also-like2{
+    margin-left: 8.25rem;
+    margin-right: 0;
+    margin-top: 3rem;
+    margin-bottom: 6.3rem;
+}
+
+.like-view{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.like-view h3{
+    color: #565E6C;
+    text-align: right;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */   
+    padding-left: 51rem; 
+}
+
+.also-like-container2{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.like-view h2{
+    color: #0D554A;
+    font-family: Cormorant Garamond;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 56px; /* 140% */
+}
+
+.also-like-container2 img{
+    padding-right: 0.625rem ;
+}
+
+
+@media screen and (max-width: 1200px){
+.also-like-container2{
+    text-align: center;
+    justify-content: center;
+}
+.ft11{
+    display: none;
+}
+.like-view h3{
+    display: none;
+}
+}
+
+@media screen and (max-width: 736px){
+#also-like2{
+    margin-left: 3rem;
+    margin-right: 3rem;}
+.gallery3 img{
+    margin-bottom: 2rem;
+}
+.gallery3 {
+    justify-content: center;
+    align-items: center;
+}
+.also-like-container2 img{
+    padding-right: 0;
+}
+}
+
+
