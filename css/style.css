@@ -1357,6 +1357,10 @@ select{
     justify-content: space-between;
 }
 
+.four-images a{
+    text-decoration: none;
+}
+
 .four-images .shop-gallery-container-bt .shop-gallery-container{
     width: 17.25rem;
     height: 25.25rem;
@@ -2001,8 +2005,8 @@ select{
         justify-content: center;
         align-items: center;
         }
-        .also-like-container img{
-            padding-right: 0;
+    .also-like-container img{
+        padding-right: 0;
     
     
     
@@ -2010,6 +2014,8 @@ select{
 }
 
 /*Payment Section*/
+
+/*Order Section*/
 
 #order-payment{
     padding-top: 7rem;
@@ -2092,13 +2098,13 @@ select{
 }
 
 
-
 .deleate-icon{
     width: 24px;
     height: 24px;
     flex-shrink: 0;
 }
 
+/*Payment*/
 
 .payment-method{
     display: flex;
@@ -2364,6 +2370,49 @@ select{
     }
 }
 
+@media screen and (max-width: 430px){
+    .order-summary-container{
+        width: 330px;
+        height: 830px;
+    }
+    .order-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 3rem;
+    }
+    
+    .order-container img{
+        padding-right: 0rem;
+    }
+    
+    .product-info{
+        display: flex;
+        flex-direction: column;
+        text-align:center;
+        padding:0;
+    }
+    
+    .order-container h5{
+        color: #171A1F;
+        text-align: center;
+        font-family: Manrope;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 22px; /* 157.143% */
+        padding: 0;
+    }
+    .payment-method{
+        display: flex;
+        flex-direction: column;
+        width: 330px;
+        height: 670px;
+    }
+}
+
+
 /*You may also like 2*/
 
 #also-like2{
@@ -2440,4 +2489,233 @@ select{
 }
 }
 
+/*Purchase Confirmation*/
 
+#purchase{
+    padding-top: 8rem;
+    padding-bottom: 9.375rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.purchase-container{
+    text-align: center;
+}
+.purchase-container img{
+    padding-bottom: 24px;
+}
+
+.purchase-container h2{
+    color: #171A1F;
+    text-align: center;
+    font-family: "Cormorant Garamond";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; /* 150% */
+    padding-bottom: 12px;    
+}
+
+.purchase-container h4{
+    color: #9095A0;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 157.143% */ 
+    padding-bottom: 48px;
+}
+
+.data{
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: #FFF;
+    box-shadow: 0px 0px 1px 0px rgba(23, 26, 31, 0.07), 0px 0px 2px 0px rgba(23, 26, 31, 0.12);
+}
+
+.data-container{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.solo-data-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1.25rem;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.icon-info{
+    display: flex;
+    flex-direction: row;
+}
+.solo-data-container img{
+    margin-right: 12px;
+}
+
+.solo-data-container h3{
+    color: #9095A0;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+}
+
+.solo-data-container h4{
+    color: #171A1F;
+    text-align: right;
+    font-family: "Cormorant Garamond";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px; /* 162.5% */   
+}
+
+.white-line-purchase{
+    margin-top: 1.5rem;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+.order-container2{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    padding-bottom: 1.5rem;
+}
+
+
+
+.order-container2 h3{
+    color: #171A1F;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px; /* 157.143% */
+}
+
+.order-container2 h4{
+    color: #565E6C;
+    font-family: Manrope;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 166.667% */
+}
+
+.order-container2 h5{
+    color: #171A1F;
+    text-align: right;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px; /* 157.143% */
+}
+
+.product-info2{
+    display: flex;
+    flex-direction: column;
+    text-align:start;
+    width: 248.13px;
+    gap: 2px;
+    padding-left: 1.5rem;
+}
+
+.order-container2 h6{
+    color: #323842;
+    font-family: Manrope;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 166.667% */
+    display: flex;
+    padding: 4px 4px 4px 8px;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 14px;
+    width: 22px;
+    background: #F3F4F6;
+}
+
+.continue-shopping{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.continue-shopping button{
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+    display: inline-flex;
+    padding: 9px 15px 9px 16px;
+    border-radius: 22px;
+    background: #0D554A;
+    border: none;
+    margin-bottom: 1.5rem;
+}
+
+.order-line{
+    text-align: start;
+    margin-left: 1.5rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+@media screen and (max-width: 736px) {
+    .product-info2{
+        display: flex;
+        flex-direction: column;
+        text-align:center;
+        justify-content: center;
+        align-items: center;
+        gap: 2px;
+        padding-left: 0;
+        padding-bottom: 3rem;
+    }
+    .order-line{
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 1.25rem;
+    }
+    .solo-data-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+        padding-bottom: 1rem;
+        text-align: center;
+        justify-content: center;
+    }
+    .icon-info{
+        padding-bottom: 0.5rem;
+    }
+    .order-line{
+        text-align: center;
+    }
+    .order-container2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        padding-bottom: 1.5rem;
+    }
+    .product-info2{
+        text-align: center;
+    }
+    .order-container2 h6{
+        justify-content: center;
+    }
+    
+}
